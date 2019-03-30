@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.window {
+  margin: 1em;
+}
+.window-header {
+  border: 2px solid black;
+  border-bottom: none;
+  padding: 0.2em;
+}
+#editor {
+  width: 50vw;
+  height: 40vh;
+  border: 2px solid black;
+  padding: 10px;
+  
+   @media (max-width: 768px) {
+    width: 90vw;
+  }
+}
+#preview {
+  width: 55vw;
+  border: 2px solid black;
+  border-top: 2px solid black;
+  padding: 10px;
+
+  code {
+    background-color: #f7f7f7;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+  }
+   @media (max-width: 768px) {
+    width: 90vw;
+    img {
+    width: 50%;
+    height: 50%;
+  }
+  }
+}
